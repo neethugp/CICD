@@ -27,6 +27,12 @@ public class SampleTestcase {
         System.out.println("Google launched");
     }
 
+    @Test
+    public void test2(){
+        driver.get("https://www.google.com/");
+        System.out.println("Google launched again");
+    }
+
     @AfterMethod
     public void exit(){
         driver.quit();
